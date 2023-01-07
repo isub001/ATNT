@@ -5,14 +5,6 @@ const link = document.getElementById('link');
 const form = document.querySelector('form');
 
 tags = ["65", "111"];
-let upcount = 0;
-var absentees = "";
-var encodedText = "";
-var finalText = "";
-var finalFormText1 = "";
-var finalFormText2 = "";
-var formText1 = "";
-var formText2 = ""
 let formData = {};
 
 countTags();
@@ -64,8 +56,8 @@ function updateDataToObject(prop, value){
 }
 
 function objToString(obj){
-    formText1 = "";
-    formText2 = "";
+    let formText1 = "";
+    let formText2 = "";
     for (const key in obj) {
         if (key === "Name" && key === "Hour-date") {
             formText1 += `${key}: ${obj[key]} `
@@ -80,15 +72,14 @@ function objToString(obj){
 }
 
 function update(){
-    absentees = "";
-    encodedText = "";
-    finalText = "";
-    finalFormText1 = "";
-    finalFormText2 = "";
+    let absentees = "";
+    let encodedText = "";
+    let finalText = "";
+    let finalFormText1 = "";
+    let finalFormText2 = "";
     absentees = tags.join(" - ");
     [finalFormText1, finalFormText2] = objToString(formData);
     //console.log(finalFormText);
-
 
     finalText = `${finalFormText1}\r\n${finalFormText2}\n${absentees}\n[Total:${tags.length}]`;
     encodedText = encodeURIComponent(finalText);
