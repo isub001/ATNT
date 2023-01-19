@@ -25,7 +25,33 @@ body{
    background: #fff;
    border-radius: 10px;
    padding: 18px 25px 20px;
-   
+}
+.initialwrapper h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 8px;
+  padding-left: 1.30rem;
+}
+.initialwrapper img {
+  max-width: 23px;
+  margin-top: 4px;
+  float: left;
+}
+
+.initialwrapper .icon1 {
+  max-width: 18px;
+  margin-top: 4px;
+}
+.initialwrapper .icon1rel {
+  max-width: 20px;
+  margin-top: 6px;
+}
+.inputBoxStyle {
+  display: block;
+  width: 100%;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px;
+  padding: .8rem;
 }
 .wrapper{
   width: 496px;
