@@ -9,33 +9,38 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
   </head>
   <body>
-    <div class="initialwrapper">
-        <form>
-            <label for="Name"><img class="icon1" src="icons/User-icon-SVG-09ujkfges.svg" alt="icon"><h2>Name</h2></label><br>
-            <input type="text" id="Name" class="inputBoxStyle" name="Name" required><br>
-            <label for="Hour-date"><img src="icons/Calandar-Icon-SVG-dvv4csd.svg" alt="icon"><h2>Date</h2></label><br>
-            <input type="date" id="Hour-date" class="inputBoxStyle" name="Hour-date" required><br>
-            <label for="Subject"><img src="icons/book_icon_188101.svg" alt="icon"><h2>Subject</h2></label><br>
-            <input type="text" id="Subject" class="inputBoxStyle" name="Subject" required><br>
-            <label for="Hour"><img class="icon1rel" src="icons/Clock-Icon-09iuhhjk.svg" alt="icon"><h2>Hour</h2></label><br>
-            <input type="number" id="Hour" class="inputBoxStyle" name="Hour" required min="1" max="7"><br>
-        </form>    
-    </div>
-    <div class="wrapper">
-      <div class="title">
-        <img src="icons/People-05.svg" alt="icon">
-        <h2>Absentees</h2>
+    <nav class="navbar">
+      <h1 class="navbar-title">ATNT</h1>
+    </nav>
+    <div class="wholewrapper">
+      <div class="initialwrapper">
+          <form>
+              <label for="Name"><img class="icon1" src="icons/User-icon-SVG-09ujkfges.svg" alt="icon"><h2>Name</h2></label><br>
+              <input type="text" id="Name" placeholder="Enter your name" class="inputBoxStyle" name="Name" required><br>
+              <label for="Hour-date"><img src="icons/Calandar-Icon-SVG-dvv4csd.svg" alt="icon"><h2>Date</h2></label><br>
+              <input type="date" id="Hour-date" class="inputBoxStyle" name="Hour-date" required><br>
+              <label for="Subject"><img src="icons/book_icon_188101.svg" alt="icon"><h2>Subject</h2></label><br>
+              <input type="text" id="Subject" class="inputBoxStyle" name="Subject" required><br>
+              <label for="Hour"><img class="icon1rel" src="icons/Clock-Icon-09iuhhjk.svg" alt="icon"><h2>Hour</h2></label><br>
+              <input type="number" id="Hour" value="1" class="inputBoxStyle" name="Hour" required min="1" max="7"><br>
+          </form>    
       </div>
-      <div class="content">
-        <p>Press enter or add a comma after each number</p>
-        <ul><input id="absent" type="text" spellcheck="false" onkeyup="addTag(event)"></ul>
+      <div class="wrapper">
+        <div class="title">
+          <img src="icons/People-05.svg" alt="icon">
+          <h2>Absentees</h2>
+        </div>
+        <div class="content">
+          <p>Press enter or add a comma after each number</p>
+          <ul><input id="absent" type="text" spellcheck="false" onkeyup="addTag(event)"></ul>
+        </div>
+        <div class="details">
+          <p><span>10</span> total absentees</p>
+          <button>Remove All</button>
+        </div>
       </div>
-      <div class="details">
-        <p><span>10</span> total absentees</p>
-        <button>Remove All</button>
-      </div>
-    </div>
-    <div><a class="btn" id="link" href="#" role="button">Send</a></div>
+      <div><a class="btn" id="link" href="#" role="button">Send</a></div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>
