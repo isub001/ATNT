@@ -6,6 +6,8 @@ const form = document.querySelector('form');
 
 tags = ["65", "111"];
 let formData = {};
+const nav = document.querySelector('nav');
+const navHeight = nav.offsetHeight;
 
 countTags();
 createTag();
@@ -101,8 +103,25 @@ form.addEventListener('change', (event) => {
     updateDataToObject(name, value);
     //console.log(formData);
     //console.log(`${name}: ${value}`);
-
-
   });   
 
-  
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) { // if the user has scrolled past the navbar
+        nav.classList.add('transparent'); // add the transparent class
+    } else {
+        nav.classList.remove('transparent'); // otherwise, remove the class
+    }
+});
+
+
+let scrollr = document.body.scrollHeight;
+let actualScroll = scrollr - window.innerHeight;
+
+window.addEventListener('scroll', () => {
+    let footer = document.querySelector('.footer1');
+    if (window.scrollY < actualScroll - 40) {
+        footer.classList.add('transparent');
+    } else {
+        footer.classList.remove('transparent');
+    }
+});

@@ -7,30 +7,42 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
-  min-height: 100vh;
   background: #FFFFFF;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
 }
 .wholewrapper {
+  grid-row: 2;
+  margin-bottom: 45px;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+nav.transparent {
+  opacity: 0;
 }
 .navbar {
   display:flex;
   align-items: flex-start;
   background: #15C39A;
   position: fixed;
+  top: 0;
   width: 100%;
-  padding: .7rem;
+  padding: 1rem;
+  transition: opacity 0.7s ease-out;
 }
 .navbar-title {
   font-family: 'Lobster Two', cursive;
   color: #FFFFFF;
 }
 .initialwrapper {  
-   margin-top: 100px;
-   width: 496px;
+   margin-top: 105px;
+   width: 32%;
    height: 100%;
    background: #fff;
    border-radius: 10px;
@@ -65,7 +77,7 @@ body{
   font-size: 15px;
 }
 .wrapper{
-  width: 496px;
+  width: 32%;
   background: #fff;
   border-radius: 10px;
   margin-top: 50px;
@@ -141,17 +153,17 @@ body{
   transition: background 0.3s ease;
 }
 .details button:hover{
-  background: #2c52ed;
+  background: #22D6A3;
 }
 a[role="button"] {
     display: inline-block;
     align-items: center;
-    margin-top: 50px;
-    padding: 9px 95px;
+    margin-top: 48px;
+    padding: 9px 75px;
     border: none;
     outline: none;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 15px;
     /*font-weight: 600;*/
     color: #fff;
     background: #15C39A;
@@ -161,10 +173,103 @@ a[role="button"] {
     transition: background 0.3s ease;
   } 
 a[role="button"]:hover {
-  background-color: #2c52ed;
+  background-color: #22D6A3;
 }
 a[role="button"]:active {
-  background-color: #0c77e1;
+  background-color: #22D6A3;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
 }
+a[role="button"]:focus, .details button:focus {
+  background-color: #22D6A3;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  border: 1.5px solid  #4C4C4C;
+}
+.footer1{
+  grid-row: 3;
+  background: #15C39A;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.8s ease-out;
+}
+.line{
+  background-color: #fff;
+  height:1px;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+.container{
+  display: flex; 
+  justify-content: center;
+  margin-top: 10px;
+}
+.iconline {
+  display: inline;
+  margin-right: 10px;
+}
+.container a, .attribution{
+  text-decoration: none;
+  color: #4C4C4C;
+}
+.container a:hover, .attribution:hover{
+  color:#fff;
+}
+.container > * {
+  margin-right: 20px; /* add 10px of space to the right of each flex item */
+}
+.container > *:last-child {
+  margin-right: 0; /* remove the right margin from the last flex item */
+}
+footer.transparent {
+  opacity: 0;
+}
   
+
+@media (max-width: 394px) {
+  /* CSS styles to apply when the viewport width is less than or equal to 600px */
+  .wholewrapper{
+    width: 100%;
+  }
+  .initialwrapper {
+    width: 80%;
+  }
+  .wrapper{
+    width: 80%;
+  }
+}
+
+@media (max-width: 327px) {
+  /* CSS styles to apply when the viewport width is less than or equal to 600px */
+  .wholewrapper{
+    width: 100%;
+  }
+  .initialwrapper {
+    width: 80%;
+  }
+  .wrapper{
+    width: 80%;
+  }
+  #absent {
+    width: 100%;
+  }
+}
+
+@media (min-width: 395px) and (max-width :550px) {
+  /* CSS styles to apply when the viewport width is less than or equal to 600px */
+  .wholewrapper{
+    width: 100%;
+  }
+  .initialwrapper {
+    width: 80%;
+  }
+  .wrapper{
+    width: 80%;
+  }
+}
