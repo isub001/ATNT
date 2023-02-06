@@ -130,7 +130,7 @@ nav.transparent {
   justify-content: center;
 }
 .content ul input{
-  flex: 1;
+  width: 30%;
   border: none;
   outline: none;
   font-size: 16px;
