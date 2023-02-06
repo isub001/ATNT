@@ -114,15 +114,3 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
-let scrollr = document.body.scrollHeight;
-let actualScroll = scrollr - window.innerHeight;
-
-window.addEventListener('scroll', () => {
-    let footer = document.querySelector('.footer1');
-    if (window.scrollY < actualScroll - 40) {
-        footer.classList.add('transparent');
-    } else {
-        footer.classList.remove('transparent');
-    }
-});
