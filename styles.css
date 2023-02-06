@@ -40,13 +40,13 @@ nav.transparent {
   color: #FFFFFF;
 }
 .initialwrapper {  
-   margin-top: 105px;
-   width: 30%;
-   height: 100%;
-   background: #fff;
-   border-radius: 10px;
-   padding: 18px 25px 20px;
-   box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  margin-top: 105px;
+  width: 30%;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px 25px 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
 }
 .initialwrapper h2 {
   font-size: 21px;
@@ -144,7 +144,6 @@ nav.transparent {
   outline: none;
   color: #fff;
   font-size: 14px;
-  cursor: pointer;
   padding: 9px 15px;
   border-radius: 5px;
   background: #15C39A;
@@ -154,21 +153,19 @@ nav.transparent {
   background: #22D6A3;
 }
 a[role="button"] {
-    display: inline-block;
-    align-items: center;
-    margin-top: 48px;
-    padding: 9px 75px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    font-size: 15px;
-    /*font-weight: 600;*/
-    color: #fff;
-    background: #15C39A;
-    cursor: pointer;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-    text-decoration: none;
-    transition: background 0.3s ease;
+  display: inline-block;
+  align-items: center;
+  margin-top: 48px;
+  padding: 9px 75px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #fff;
+  background: #15C39A;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  text-decoration: none;
+  transition: background 0.3s ease;
   } 
 a[role="button"]:hover {
   background-color: #22D6A3;
@@ -191,8 +188,7 @@ a[role="button"]:focus, .details button:focus {
   height: 130px;
   padding: 1rem;
   text-align: center;
-  color: #fff;
-  transition: opacity 0.8s ease-out;
+  color: #fff;  
 }
 .line{
   background-color: #fff;
@@ -273,5 +269,4 @@ footer.transparent {
   .content ul input{
     flex-wrap: wrap;
   }
-
 }
